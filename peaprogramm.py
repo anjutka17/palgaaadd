@@ -3,18 +3,18 @@ def patsiendid():
     nimed, vitamiinid = loo_andmed()
 
     while True:
-             print("\n--- MEN‹‹ ---")
-             print("1 - N‰ita patsiente, kellel on D-vitamiini puudus (<30)")
-             print("2 - Arvuta keskmine D-vitamiini n‰it")
-             print("3 - Top K inimesed kırgeima D-vitamiiniga")
-             print("4 - Otsi patsienti nime j‰rgi")
-             print("5 - Oma valik (n‰ita patsientide arvu, kellel D > 80)")
-             print("0 - V‰lju")
+             print("\n--- MEN√ú√ú ---")
+             print("1 - N√§ita patsiente, kellel on D-vitamiini puudus (<30)")
+             print("2 - Arvuta keskmine D-vitamiini n√§it")
+             print("3 - Top K inimesed k√µrgeima D-vitamiiniga")
+             print("4 - Otsi patsienti nime j√§rgi")
+             print("5 - Oma valik (n√§ita patsientide arvu, kellel D > 80)")
+             print("0 - V√§lju")
 
              valik = input("Sinu valik: ")
 
              if valik == "1":
-                puuduj‰‰k(nimed, vitamiinid)
+                puuduj√§√§k(nimed, vitamiinid)
              elif valik == "2":
                 keskmine(vitamiinid)
              elif valik == "3":
@@ -24,8 +24,10 @@ def patsiendid():
              elif valik == "5":
                  oma_valik(nimed, vitamiinid)
              elif valik == "0":
-                  print("Programmi lıpp.")
+                  print("Programmi l√µpp.")
              break
     else:
         print("Vigane valik. Proovi uuesti.")
+if __name__=="__main__":
+    patsiendid()
     
